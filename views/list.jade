@@ -1,0 +1,13 @@
+  body
+    #main 
+      ul.list
+        each item in items
+          li
+            article !{item.content}
+      - if(locals.next || locals.previous) {
+        nav
+          - if(locals.next)
+            a(href=next) &laquo; newer posts
+          - if(locals.previous)
+            a.right(href=previous) older posts &raquo;
+      - }

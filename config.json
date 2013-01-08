@@ -1,0 +1,12 @@
+{
+  "name": "mvr.me",
+  "author" : "Mike van Rossum",
+  "domain": "localhost",
+  "root": "/nano-site/output/",
+  "input": "/Users/mikevanrossum/Dropbox/vps/mvr.me/",
+  "views": "views/",
+  "output": "output/",
+  "extension": ".html",
+  "itemsPerPage": 10,
+  "debug": true
+}

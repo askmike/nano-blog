@@ -1,0 +1,220 @@
+/*
+  inspiration from @link http://kaikkonendesign.fi/interactive-guide-to-blog-typography/
+  and @link http://svbtle.com
+*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
+a {
+  color: #4d4d4d;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+  border: none;
+  color: #333;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5 {
+  color: #333;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 1em;
+  line-height: 1.1em;
+  margin-bottom: 1em;
+  color: #313131;
+  font-size: 1.728em;
+}
+
+h2 {
+  font-size: 1.44em;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #555;
+}
+h5 {
+  color: #555;
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #555;
+}
+
+p {
+  line-height: 1.5em;
+  color: #444;
+  margin-bottom: 1.5em;
+}
+
+#about {
+  position:fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid #E2E2E2;
+  padding: 35px 50px;
+}
+
+#main {
+  margin-left: 400px;
+  overflow: hidden;
+  width: 500px;
+  padding-bottom: 50px
+}
+
+#main img {
+  width: 455px;
+}
+
+blockquote {
+  padding-left: 1em;
+  margin-left: 0;
+  border-left: 1px #84888b solid;
+  /*font-style: italic;*/
+}
+
+/* list */
+
+.list {
+  padding-left: 0;
+  padding-bottom: 0; 
+}
+
+.list h1 {
+  font-size: 1.5em;
+}
+
+.list h2,
+.list h3,
+.list h4,
+.list h5,
+.list h6 {
+  font-size: 1.25em; 
+}
+
+.list > li {
+  list-style-type: none;
+}
+
+article {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E2E2E2;
+  padding-left: 45px;
+}
+
+#main li:last-child article {
+  margin-bottom: 0;
+}
+
+/* single */
+
+article#main {
+  padding-top: 45px;
+}
+
+.postdiv {
+  height:30px;
+}
+
+#main nav {
+  padding-left: 45px;
+  padding-bottom: 25px;
+}
+
+.right {
+  display: block;
+  float: right;
+}
+
+/* iPad portrait / small screen */
+@media only screen and (max-width : 900px) {
+  article,
+  #main nav {
+    padding-left: 0;
+  }
+
+  #main {
+    margin-left: 0;
+    margin: auto;
+    padding:0 10px;
+    width: 500px;
+  }
+
+  #logo {
+    width: 103px;
+    margin: auto;
+    display: block;
+  }
+
+  #about {
+    width: 500px;
+    padding: 35px 10px 0 10px;
+    margin: auto;
+    position: static;
+    border-right: none;
+    border-top: 1px solid #E2E2E2;
+  }
+
+  .more {
+    padding-top:30px;
+  }
+}
+
+/* iPhone */
+@media only screen and (max-device-width : 480px) {
+  .list {
+    padding-top: 25px;
+  }
+
+  #main {
+    width: 300px;
+  }
+
+  #main img {
+    width: 300px;
+  }
+
+  #about {
+    width: 300px;
+  }
+
+  .more {
+    padding-top:30px;
+  }
+}
